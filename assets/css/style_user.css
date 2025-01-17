@@ -10646,4 +10646,28 @@ h1, .h1 {
 
 img {
   width: 200px;
+}
+
+.form-check-input {
+  appearance: none;
+  width: 1.5em;
+  height: 1.5em;
+  border: 0.1em solid #6c757d;
+  background-color: transparent;
+  top: 5px;
+  position: relative;
+  cursor: pointer;
+}
+
+.form-check-input:checked::before {
+  content: "✔";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black; /* Non so perché non cambia colore */
+  font-size: 1rem;
+  font-weight: bold;
+  position: absolute;
+  bottom: 2px;
+  left: 0;
 }/*# sourceMappingURL=style_user.css.map */
