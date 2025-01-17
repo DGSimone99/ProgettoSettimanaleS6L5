@@ -10596,6 +10596,14 @@ header nav .active {
   left: -60px;
 }
 
+body {
+  color: #e3f4e8;
+}
+
+h3, .h3 {
+  color: #cccccc;
+}
+
 .logo {
   width: 120px;
 }
@@ -10610,85 +10618,32 @@ header nav .active {
   width: 100%;
 }
 
-.btn:focus {
-  border: none;
-}
-
-.sorter i {
-  border-color: gray !important;
-  color: gray !important;
-  cursor: pointer;
-}
-.sorter i:hover {
-  color: rgb(210, 210, 210) !important;
-  border-color: rgb(210, 210, 210) !important;
-  font-size: 1.15em;
-}
-.sorter .active {
-  color: white !important;
-  border-color: white !important;
-  font-size: 1.1em;
-}
-
-.carousel-inner:hover {
-  overflow: visible;
-}
-
-main .col-2 {
-  transition: transform 0.3s;
-}
-main .col-2:hover {
-  transform: scale(120%);
-  cursor: pointer;
-  z-index: 2;
-}
-
-footer {
-  font-size: 0.75em;
-}
-footer i {
-  font-size: 1.5em;
+main {
+  width: 80%;
+  font-size: 0.75rem;
 }
 @media screen and (min-width: 768px) {
-  footer i {
-    font-size: 2em;
-  }
-}
-footer .border {
-  width: 90px;
-}
-footer p {
-  font-size: 0.75em;
-}
-
-footer ul {
-  list-style-type: none;
-}
-
-.footer {
-  width: 90%;
-}
-@media screen and (min-width: 768px) {
-  .footer {
-    width: 70%;
+  main {
+    width: 400px;
+    font-size: 0.8rem;
   }
 }
 @media screen and (min-width: 992px) {
-  .footer {
-    width: 60%;
+  main {
+    width: 700px;
+    font-size: 1rem;
   }
 }
 
-.social {
-  max-width: 100px;
+h1, .h1 {
+  font-size: 5em;
 }
-@media screen and (min-width: 768px) {
-  .social {
-    max-width: 150px;
-  }
+
+.name,
+.ams {
+  background-color: #666666;
 }
-@media screen and (min-width: 992px) {
-  .social {
-    max-width: 200px;
-  }
-}/*# sourceMappingURL=style.css.map */
+
+img {
+  width: 200px;
+}/*# sourceMappingURL=style_user.css.map */

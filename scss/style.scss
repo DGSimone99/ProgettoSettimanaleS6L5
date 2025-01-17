@@ -1,20 +1,16 @@
 @import "./partials/reset";
 @import "./partials/bootstrap_override";
 
-header {
-  nav {
-    .logo {
-      width: 120px;
-      img {
-        width: 100%;
-      }
-    }
-    .user {
-      width: 40px;
-      img {
-        width: 100%;
-      }
-    }
+.logo {
+  width: 120px;
+  img {
+    width: 100%;
+  }
+}
+.user {
+  width: 40px;
+  img {
+    width: 100%;
   }
 }
 
