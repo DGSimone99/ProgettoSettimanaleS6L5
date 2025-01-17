@@ -146,7 +146,8 @@
 
         <section class="trending">
           <h2 class="mb-2">Trending Now</h2>
-          <div id="carouselExample" class="carousel slide">
+          <!--TRENDING LG. Non so se era il metodo migliore per rendere responsive il carosello senza escludere film, ma non mi è venuto in mente altro-->
+          <div id="trendinglg" class="carousel slide d-none d-lg-block">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <div class="row g-1">
@@ -156,22 +157,23 @@
                   <div class="col-2">
                     <img src="./assets/img/media/media1.jpg" class="d-block w-100" alt="American Factory" />
                   </div>
-                  <div class="col-2">
+                  <div class="col-2 d-none d-md-block">
                     <img src="./assets/img/media/media2.webp" class="d-block w-100" alt="The Good Place" />
                   </div>
-                  <div class="col-2">
+                  <div class="col-2 d-none d-md-block">
                     <img src="./assets/img/media/media3.webp" class="d-block w-100" alt="Genius of the Modern World" />
                   </div>
-                  <div class="col-2">
+                  <div class="col-2 d-none d-lg-block">
                     <img src="./assets/img/media/media4.jpg" class="d-block w-100" alt="Cuba and the Cameraman" />
                   </div>
-                  <div class="col-2">
+                  <div class="col-2 d-none d-lg-block">
                     <img src="./assets/img/media/media5.webp" class="d-block w-100" alt="The China Hustle" />
                   </div>
                 </div>
               </div>
+
               <div class="carousel-item">
-                <div class="row g-2">
+                <div class="row g-1">
                   <div class="col-2">
                     <img src="./assets/img/media/media6.jpg" class="d-block w-100" alt="The Social Dilemma" />
                   </div>
@@ -193,11 +195,172 @@
                 </div>
               </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#trendinglg" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#trendinglg" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <!-- TRENDING MD -->
+          <div id="trendingmd" class="carousel slide d-none d-md-block d-lg-none">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row g-1">
+                  <div class="col-3">
+                    <img src="./assets/img/media/media0.webp" class="d-block w-100" alt="Sherlock" />
+                  </div>
+                  <div class="col-3">
+                    <img src="./assets/img/media/media1.jpg" class="d-block w-100" alt="American Factory" />
+                  </div>
+                  <div class="col-3">
+                    <img src="./assets/img/media/media2.webp" class="d-block w-100" alt="The Good Place" />
+                  </div>
+                  <div class="col-3">
+                    <img src="./assets/img/media/media3.webp" class="d-block w-100" alt="Genius of the Modern World" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="row g-1">
+                  <div class="col-3">
+                    <img src="./assets/img/media/media4.jpg" class="d-block w-100" alt="Cuba and the Cameraman" />
+                  </div>
+                  <div class="col-3">
+                    <img src="./assets/img/media/media5.webp" class="d-block w-100" alt="The China Hustle" />
+                  </div>
+                  <div class="col-3">
+                    <img src="./assets/img/media/media6.jpg" class="d-block w-100" alt="The Social Dilemma" />
+                  </div>
+                  <div class="col-3">
+                    <img src="./assets/img/media/media7.webp" class="d-block w-100" alt="AROG" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="row g-1">
+                  <div class="col-3">
+                    <img src="./assets/img/media/media8.webp" class="d-block w-100" alt="Yashi Bati" />
+                  </div>
+                  <div class="col-3">
+                    <img src="./assets/img/media/media9.jpg" class="d-block w-100" alt="Connected" />
+                  </div>
+                  <div class="col-3">
+                    <img src="./assets/img/media/media10.jpg" class="d-block w-100" alt="The Spy" />
+                  </div>
+                  <div class="col-3">
+                    <img src="./assets/img/media/media11.jpg" class="d-block w-100" alt="The College" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev d-none d-md-block d-lg-none"
+              type="button"
+              data-bs-target="#trendingmd"
+              data-bs-slide="prev"
+            >
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next d-none d-md-block d-lg-none"
+              type="button"
+              data-bs-target="#trendingmd"
+              data-bs-slide="next"
+            >
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <!-- TRENDING SM -->
+          <div id="trendingsm" class="carousel slide d-md-none">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row g-1">
+                  <div class="col-6">
+                    <img src="./assets/img/media/media0.webp" class="d-block w-100" alt="Sherlock" />
+                  </div>
+                  <div class="col-6">
+                    <img src="./assets/img/media/media1.jpg" class="d-block w-100" alt="American Factory" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="row g-1">
+                  <div class="col-6">
+                    <img src="./assets/img/media/media2.webp" class="d-block w-100" alt="The Good Place" />
+                  </div>
+                  <div class="col-6">
+                    <img src="./assets/img/media/media3.webp" class="d-block w-100" alt="Genius of the Modern World" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="row g-1">
+                  <div class="col-6">
+                    <img src="./assets/img/media/media4.jpg" class="d-block w-100" alt="Cuba and the Cameraman" />
+                  </div>
+                  <div class="col-6">
+                    <img src="./assets/img/media/media5.webp" class="d-block w-100" alt="The China Hustle" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="row g-1">
+                  <div class="col-6">
+                    <img src="./assets/img/media/media6.jpg" class="d-block w-100" alt="The Social Dilemma" />
+                  </div>
+                  <div class="col-6">
+                    <img src="./assets/img/media/media7.webp" class="d-block w-100" alt="AROG" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="row g-1">
+                  <div class="col-6">
+                    <img src="./assets/img/media/media8.webp" class="d-block w-100" alt="Yashi Bati" />
+                  </div>
+                  <div class="col-6">
+                    <img src="./assets/img/media/media9.jpg" class="d-block w-100" alt="Connected" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="row g-1">
+                  <div class="col-6">
+                    <img src="./assets/img/media/media10.jpg" class="d-block w-100" alt="The Spy" />
+                  </div>
+                  <div class="col-6">
+                    <img src="./assets/img/media/media11.jpg" class="d-block w-100" alt="The College" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev d-md-none"
+              type="button"
+              data-bs-target="#trendingsm"
+              data-bs-slide="prev"
+            >
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next d-md-none"
+              type="button"
+              data-bs-target="#trendingsm"
+              data-bs-slide="next"
+            >
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
