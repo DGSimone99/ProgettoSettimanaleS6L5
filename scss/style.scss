@@ -39,3 +39,16 @@ header {
     font-size: 1.1em;
   }
 }
+
+.carousel-inner:hover {
+  overflow: visible;
+}
+
+.col-2 {
+  transition: transform 0.3s;
+  &:hover {
+    transform: scale(120%);
+    cursor: pointer;
+    z-index: 2;
+  }
+}

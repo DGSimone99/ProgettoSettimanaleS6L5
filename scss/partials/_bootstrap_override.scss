@@ -38,7 +38,7 @@ $spacers: map-merge($spacers, $newSpacers);
 @import "../../bootstrap/scss/button-group";
 @import "../../bootstrap/scss/nav";
 @import "../../bootstrap/scss/navbar";
-
+@import "../../bootstrap/scss/carousel";
 @import "../../bootstrap/scss/helpers";
 
 // 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
@@ -60,11 +60,24 @@ header {
 
 .dropdown-menu {
   box-sizing: content-box;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 .dropdown-item:hover {
   color: white !important;
   transform: scale(105%);
   background-color: transparent !important;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  width: 75px;
+  z-index: 3;
+}
+
+.carousel-control-next {
+  right: -60px;
+}
+.carousel-control-prev {
+  left: -60px;
 }
