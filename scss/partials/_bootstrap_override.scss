@@ -57,3 +57,14 @@ header {
   color: rgb(210, 210, 210) !important;
   transform: scale(110%);
 }
+
+.dropdown-menu {
+  box-sizing: content-box;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.dropdown-item:hover {
+  color: white !important;
+  transform: scale(105%);
+  background-color: transparent !important;
+}

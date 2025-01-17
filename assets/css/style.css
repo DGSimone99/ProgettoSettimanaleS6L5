@@ -10364,6 +10364,17 @@ header nav .active {
   transform: scale(110%);
 }
 
+.dropdown-menu {
+  box-sizing: content-box;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.dropdown-item:hover {
+  color: white !important;
+  transform: scale(105%);
+  background-color: transparent !important;
+}
+
 header nav .logo {
   width: 120px;
 }
@@ -10377,11 +10388,22 @@ header nav .user img {
   width: 100%;
 }
 
-.dropdown-menu {
-  box-sizing: content-box;
-  background-color: rgba(0, 0, 0, 0.7);
-}
-
 .btn:focus {
   border: none;
+}
+
+.sorter i {
+  border-color: gray !important;
+  color: gray !important;
+  cursor: pointer;
+}
+.sorter i:hover {
+  color: rgb(210, 210, 210) !important;
+  border-color: rgb(210, 210, 210) !important;
+  font-size: 1.15em;
+}
+.sorter .active {
+  color: white !important;
+  border-color: white !important;
+  font-size: 1.1em;
 }/*# sourceMappingURL=style.css.map */
